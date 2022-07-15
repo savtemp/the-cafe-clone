@@ -1,0 +1,38 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    flex-grow: 1;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* FIXME how to get the hover to not make the box bigger? */
+.hover:hover{
+    background-color: gray;
+    border: .5em solid black;
+    text-decoration: none;
+    /* FIXME what is wrong with the important tag? */
+    color: black; !important
+}
+
+.hero-img{
+    background-image: url("https://images.unsplash.com/photo-1523294587484-bae6cc870010?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YnJlYWR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60");
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+}
+
+.grey-box{
+    background-color: rgb(237, 231, 231);
+    border-left: .30em solid rgb(174, 170, 170);
+}
